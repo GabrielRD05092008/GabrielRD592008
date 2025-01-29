@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+    <link rel="stylesheet" href="aluno.css">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<div class="logo">
+				<img src="conservatorio.png"/>
+			</div>
+			<div class="nome">
+				<h1 id="conservatorio">Conservatorio Luis Levy</h1>
+			</div>
+			<div class="cadastro">
+				<a href="cadastromodificado.html" target="novo 1.html">Cadastro</a>
+			</div>
+			<div class="login">
+				<a href="login.html" target="novo 1.html">Login</a>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="container">
+		<div class="sidebar">
+            <button onclick="mostrarConteudo('aulasMarcadas')">Aulas Marcadas</button>
+            <button onclick="mostrarConteudo('justificarAusencia')">Justificar Ausência</button>
+            <button onclick="mostrarConteudo('sugestoes')">Sugestões</button>
+            <button onclick="mostrarConteudo('sair')">Sair</button>
+        </div>
+        <div class="conteudo">
+			<div id="boavindas" class="conteudo-item" style="display: flex;">
+                <h1>Bem-Vindo, Aluno!</h1>
+            </div>
+			<div id="boavindas" class="conteudo-item" style="display: flex;">
+				<img src="aluno.png"/>
+            </div>
+            <div id="aulasMarcadas" class="conteudo-item" style="display: none;">
+                <div class="aulas">Suas aulas dão nos dias:</div>
+				<div class="aulas2">Calendário</div>
+				<div class="divizona">
+				<div class="divizinha"><img src="calendario.png"/></div>
+				</div>
+            </div>
+            <div id="justificarAusencia" class="conteudo-item" style="display: none;">
+                <div class="justificar">Justificar Ausência</div>
+                <input type="date" placeholder="Data de Ausência"><br><br>
+                <textarea placeholder="Razão da falta para consideração..."></textarea><br><br>
+                <button>ENVIAR JUSTIFICATIVA</button>
+            </div>
+            <div id="sugestoes" class="conteudo-item" style="display: none;">
+                <div class="sugestao">Sugestões</div>
+                <textarea placeholder="Escreva sua sugestão aqui..."></textarea><br><br>
+                <button>ENVIAR SUGESTÃO</button>
+            </div>
+            <div id="sair" class="conteudo-item" style="display: none;">
+                <div class="sair">Sair</div>
+                <div class="certeza">Tem certeza de que deseja sair?</div>
+                <button><a href="novo 1.html">SIM</a></button>
+            </div>
+        </div>
+	</div>
+	
+	<footer>
+		<img src="conservatorio.png" class="img" />
+
+		<a href="aluno.html" id="fugir">Voltar ao Início da Página?</a>
+				<ul class="informacoes">
+					<li><h3>Contato</h3></li>
+					<li>Telefone: 14-987654-3210</li>
+					<li>Endereço: Taquarituba (SP), Luiz Benini, 217</li>
+					<li>Horário de atendimento: Das 9h até as 22h.</li>
+				</ul>
+				<ul></ul>
+		</footer>
+		<script>
+	function mostrarConteudo(id) {
+    const conteudos = document.querySelectorAll('.conteudo-item');
+    conteudos.forEach(conteudo => conteudo.style.display = 'none');
+
+    document.getElementById(id).style.display = 'block';
+}
+
+	</script>
+	
+	
+	
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservatório LsV</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+
+
+<body>
+
+	<header>
+		<nav class="navbar" id="navbar">
+			<div class="logo">
+				<img src="conservatorio.png" />
+			</div>
+			<div class="menu">
+				<div class="menu-item">
+					<a href="novo 1.html">Inicio</a>
+					<div class="submenu">
+						<a href="novo 1.html">Pagina Inicial</a>
+						<a href="historia.html">História</a>
+					</div>
+				</div>
+				<div class="menu-item">
+					<a href="cursos.html">Cursos</a>
+				</div>
+				<a href="colabore.html">Colabore</a>
+				<a href="faleconosco.html">Fale Conosco</a>
+			</div>
+			<div class="nome">
+				<h1 id="conservatorio">Conservatorio Luis Levy</h1>
+			</div>
+			<div class="cadastro">
+				<a href="cadastromodificado.html" target="novo 1.html">Cadastro</a>
+			</div>
+			<div class="login">
+				<a href="login.html" target="novo 1.html">Login</a>
+			</div>
+		</nav>
+	
+	</header>
+		
+
+	
+		<form action="" id="choiseForm">
+			<div id="login" style="position:relative;">
+				<p class="entrecomo" >
+				<input type="radio" name="alunoprof" value="alu" checked /><b> Aluno&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+				<input type="radio" name="alunoprof" value="prof"/><b> Professor</b>
+				</p>
+				<label for="email" class="email" style="letter-spacing:2.6px"><b>Email</b></label>
+				<input type="text" class="email" placeholder="Entre com Email" name="email" class="input-field" required>
+				<br/>
+				<label for="psw" class="senha" style="letter-spacing:2.6px"><b>Senha</b></label>
+				<input type="password" class="senha" placeholder="Entre com a Senha" name="psw" class="input-field" required>
+				
+			</div>
+			
+		</form>
+		<div class="opa" style="position:relative;">
+		<p>Login</p>
+	</div>
+	<button type="submit" class="registerbtn" onclick="redirectUser()" id="entrar">ENTRAR</button>
+	
+	<footer style="left:0px; top:100px">
+    <img src="conservatorio.png" class="img" />
+
+    <a href="login.html" id="fugir">Voltar ao Início da Página?</a>
+    <ul class="informacoes">
+        <li><h3>Contato</h3></li>
+        <li>Telefone: 14-987654-3210</li>
+        <li>Endereço: Taquarituba (SP), Luiz Benini, 217</li>
+        <li>Horário de atendimento: Das 9h até as 22h.</li>
+    </ul>
+    <ul></ul>
+</footer>
+
+	<script>
+        function redirectUser() {
+            const selectedRole = document.querySelector('input[name="alunoprof"]:checked');
+            
+            if (selectedRole) {
+                if (selectedRole.value === "prof") {
+                    window.location.href = "professor.html";
+                } else if (selectedRole.value === "alu") {
+                    window.location.href = "aluno.html";
+                }
+            } else {
+                alert("Por favor, selecione uma opção.");
+            }
+        }
+    </script>
+	
+	
+
+</body>
+
+
+</html>

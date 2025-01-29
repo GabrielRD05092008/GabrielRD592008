@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="novo 2.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="conservatorio.png" />
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="novo 1.html">Início</a>
+                <div class="submenu">
+                    <a href="novo 1.html">Página Inicial</a>
+                    <a href="historia.html">História</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="cursos.html">Cursos</a>
+            </div>
+            <a href="colabore.html">Colabore</a>
+            <a href="faleconosco.html">Fale Conosco</a>
+        </div>
+        <div class="nome">
+            <h1 id="conservatorio">Conservatorio Luis Levy</h1>
+        </div>
+        <div class="cadastro">
+            <a href="cadastromodificado.html" target="novo 1.html">Cadastro</a>
+        </div>
+        <div class="login">
+            <a href="login.html" target="novo 1.html">Login</a>
+        </div>
+    </nav>
+
+</header>
+<main>
+        <div class="banner" style="position:relative; left:0px; top:150px">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Outdoor.png" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="prédio.jpg" alt="Imagem 2">
+                </div>
+                <div class="slide especifico">
+
+                </div>
+            </div>
+        </div>
+  
+    <div id="apresentacao">
+    <div class="umpoucosobre">
+        <h1>Um pouco sobre...</h1>
+    </div>
+
+    <div class="textumpoucosobre">
+        <h2 style="text-align:justify; margin-left:5%; margin-right:5%;">Somos uma empresa muito dedicada à música: Também os pássaros, mesmo presos, cantam, tal que essa é a sua liberdade; assim ao homem a música é liberdade, donde que o conservatório espera fazer dos cursandos mais livres pela Música.</h2>
+    </div>
+
+</div>
+</main>
+<div class="paidetodos">
+    <div id="oferecido">Oferecemos...</div>
+    <div class="continente">
+        <div class="estudeconosconao">Estude Conosco</div>
+        <div class="cursostodos">
+            <div class="instrumentos">Cursos de Instrumento</div>
+            <div class="abainstrumentos container">
+                <figure class="image">
+           
+                    <img src="violino.jpg" id="violino"></img>
+                    <figcaption>Violino</figcaption>
+               
+                </figure>
+                
+                <figure class="image">
+                   
+                    <img src="viola.jpg"></img>
+                    <figcaption>Viola</figcaption>
+             
+                </figure>
+                
+                
+                <figure class="image">
+                   
+                    <img src="violoncelo.jpeg"></img>
+                    <figcaption>Violoncelo</figcaption>
+              
+                </figure>
+                
+                
+                    <figure class="image">
+                        
+                        <img src="piano.jpg"></img>
+                        <figcaption>Piano</figcaption>
+                   
+                    </figure>
+                    
+                    
+                        <figure class="image">
+                          
+                            <img src="images.jpeg"></img>
+                            <figcaption>Violão</figcaption>
+                       
+                        </figure>
+            </div>
+            <div class="outrostipos">Cursos Criativos</div>
+            <div class="abaoutrostipos container">
+                <figure>
+                    <img src="maestro.jpg" class="diferentes"/>
+                    <figcaption>Regência</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="bethoven.jpeg" class="diferentes"/>
+                    <figcaption>Composição e arranjo</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1 class="queres"><i>Queres saber mais sobre os cursos?</i></h1>
+    <a href="cursos.html" class="clique">Clique Aqui.</a>
+</div>
+
+<footer>
+    <img src="conservatorio.png" class="img" />
+
+    <a href="#navbar" id="fugir">Voltar ao Início da Página?</a>
+    <ul class="informacoes">
+        <li><h3>Contato</h3></li>
+        <li>Telefone: 14-987654-3210</li>
+        <li>Endereço: Taquarituba (SP), Luiz Benini, 217</li>
+        <li>Horário de atendimento: Das 9h até as 22h.</li>
+    </ul>
+    <ul></ul>
+</footer>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            const slidesContainer = document.querySelector('.slides');
+            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(moveSlide, 3000);
+    </script>
+</body>
+
+
+
+</html>

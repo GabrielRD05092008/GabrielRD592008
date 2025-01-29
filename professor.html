@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor</title>
+    <link rel="stylesheet" href="professor.css">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<div class="logo">
+				<img src="conservatorio.png"/>
+			</div>
+			<div class="nome">
+				<h1 id="conservatorio">Conservatorio Luis Levy</h1>
+			</div>
+			<div class="cadastro">
+				<a href="cadastromodificado.html" target="novo 1.html">Cadastro</a>
+			</div>
+			<div class="login">
+				<a href="login.html" target="novo 1.html">Login</a>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="container">
+		<div class="sidebar">
+            <button onclick="mostrarConteudo('Alunos')">Alunos</button>
+            <button onclick="mostrarConteudo('Planosdeaula')">Planos De Aula</button>
+            <button onclick="mostrarConteudo('sugestoes')">Sugestões</button>
+            <button onclick="mostrarConteudo('sair')">Sair</button>
+        </div>
+        <div class="conteudo">
+			<div  class="conteudo-item" style="display: flex;">
+                <div class="bemvindo">Bem Vindo, Professor!</div>
+            </div>
+			
+			<div  class="conteudo-item" style="display: flex;">
+                <img src="professorr.png"/>
+            </div>
+			
+            <div id="Alunos" class="conteudo-item" style="display: none;">
+                <table class="table">
+					<tr>
+						<th>Alunos</th>
+						<th>Cursos</th>
+						<th>Cidade</th>
+						<th>Turmas</th>
+					</tr>
+					
+					<tr>
+						<td>Gabriel</td>
+						<td>Violino</td>
+						<td>Taquarituba-Aleixo-SP</td>
+						<td>1</td>
+					</tr>
+					
+					<tr>
+						<td>Luis Fabiano</td>
+						<td>Viola</td>
+						<td>Taquarituba-SP</td>
+						<td>2</td>
+					</tr>
+					
+					<tr>
+						<td>Joaquim dos Santos</td>
+						<td>Regência</td>
+						<td>Paranaguá-PR</td>
+						<td>8</td>
+					</tr>
+					
+					<tr>
+						<td>Germana Santana</td>
+						<td>Composição</td>
+						<td>Avaré-SP</td>
+						<td>6</td>
+					</tr>
+					
+					<tr>
+						<td>Francisco Teodoro</td>
+						<td>Arranjo</td>
+						<td>Taquarituba-Aleixo-SP</td>
+						<td>7</td>
+					</tr>
+					
+					<tr>
+						<td>Joana Cristina</td>
+						<td>Violão</td>
+						<td>Taguaí-SP</td>
+						<td>4</td>
+					</tr>
+					
+					<tr>
+						<td>Giordano Campos</td>
+						<td>Piano</td>
+						<td>Fartura-SP</td>
+						<td>5</td>
+					</tr>
+					
+					<tr>
+						<td>José Oliveira</td>
+						<td>Violoncelo</td>
+						<td>Taguaí- China - SP</td>
+						<td>3</td>
+					</tr>
+				</table>
+            </div>
+            <div id="Planosdeaula" class="conteudo-item" style="display: none;">
+                <table class="table2">
+					<div id="metinst">
+						Método de Instrumento
+					</div>
+					
+					<tr>
+						<td>Violino</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1jPDXXl03M8hnZOTianc0CDJbehQmS-v9" download="violino.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Viola</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1PgUnMUy3DXeIursLStCmtvAda_jzN_GH" download="viola.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Violoncelo</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1nh7rZpW491d2JKCCef09o5FQPKSHY1Z8" download="violoncelo.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Piano</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1QVZRqqo2TisfRtMXoymyvqn9M4yeKp8f" download="piano.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Violão</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=15PRt2n7vV3J58Z9sOkERiFpvbdD6Qq3Z" download="violao.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+				</table>
+				<table class="table2">
+					<div id="metinst2">
+						Método de Invenção Musical
+					</div>
+					
+					<tr>
+						<td>Regência</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1SMpwRQp_nzw38CN5Nv1jFa_4lCnJ6Wec" download="regencia.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Composição</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=17ISOC8WjldpvJOui9bJJX4gXLsL3wzpH" download="composicao.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Arranjo</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=11ibIyKb26zpEMtza5eUdmEuTOEHDdwTR" download="arranjo.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Improvisação</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1zjIG8uuthBeZajOYz_F7vCYSEXz_5Jt8" download="improvicao.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+					
+					<tr>
+						<td>Licenciatura</td>
+						<td><a href="https://drive.google.com/uc?export=download&id=1vg67JsXANovwsridefIwZX2y-u9zVCbK" download="licenciatura.pdf"><img src="icone.png" class="icone"/></a></td>
+					</tr>
+				</table>
+            </div>
+            <div id="sugestoes" class="conteudo-item" style="display: none;">
+                <div class="sugestao">Sugestões</div>
+                <textarea placeholder="Escreva sua sugestão aqui..."></textarea><br><br>
+                <button>ENVIAR SUGESTÃO</button>
+            </div>
+            <div id="sair" class="conteudo-item" style="display: none;">
+                <div class="sair">Sair</div>
+                <div class="certeza">Tem certeza de que deseja sair?</div>
+                <button><a href="novo 1.html">SIM</a></button>
+            </div>
+        </div>
+	</div>
+	
+	<footer>
+		<img src="conservatorio.png" class="img" />
+
+		<a href="professor.html" id="fugir">Voltar ao Início da Página?</a>
+				<ul class="informacoes">
+					<li><h3>Contato</h3></li>
+					<li>Telefone: 14-987654-3210</li>
+					<li>Endereço: Taquarituba (SP), Luiz Benini, 217</li>
+					<li>Horário de atendimento: Das 9h até as 22h.</li>
+				</ul>
+				<ul></ul>
+		</footer>
+		<script>
+	function mostrarConteudo(id) {
+    const conteudos = document.querySelectorAll('.conteudo-item');
+    conteudos.forEach(conteudo => conteudo.style.display = 'none');
+
+    document.getElementById(id).style.display = 'block';
+}
+
+	</script>
+	
+	
+	
+</body>
+
+</html>

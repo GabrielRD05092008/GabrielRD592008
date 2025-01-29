@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Colabore</title>
+		<link rel="stylesheet" href="colabore.css">
+	</head>
+	
+	<body>
+	
+		<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="conservatorio.png" />
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="novo 1.html">Inicio</a>
+                <div class="submenu">
+                    <a href="novo 1.html">Pagina Inicial</a>
+                    <a href="historia.html">História</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="cursos.html">Cursos</a>
+            </div>
+            <a href="colabore.html">Colabore</a>
+            <a href="faleconosco.html">Fale Conosco</a>
+        </div>
+        <div class="nome">
+            <h1 id="conservatorio">Conservatorio Luis Levy</h1>
+        </div>
+        <div class="cadastro">
+            <a href="cadastromodificado.html" target="novo 1.html">Cadastro</a>
+        </div>
+        <div class="login">
+            <a href="login.html" target="novo 1.html">Login</a>
+        </div>
+    </nav>
+
+</header>
+
+	<div class="colaborador">
+		<h1>Seja um Colaborador</h1>
+	</div>
+	
+	<div class="colaboradordivsona">
+	</div>
+	
+	
+	<div class="pagueopix">
+		<h2>Pague o Pix</h2>
+	</div>
+	
+	<div class="qrcode">
+		<img src="qecode.png"/>
+	</div>
+	
+	<div class="pix-button">
+		<div class="label"><buttom  id="execCopy">Pix<br>copia/cola</buttom></div>
+		<div class="input-area"> <input  id="input" type="text" value="ConservatorioLuizLevy@gmail.com" readonly></input></div>
+	</div>
+	
+	<div class="divizinha"><p>Os preços cobrados pelo Conservatório Luiz Levy são mínimos, mas os gastos dele são os mesmos.</p><p>Se quiser fazer com que o Conservatório continue funcionando com qualidade, faça um PIX.</p>  
+	</div>
+
+  
+	
+	<footer>
+    <img src="conservatorio.png" class="img" />
+
+    <a href="colabore.html" id="fugir">Voltar ao Início da Página?</a>
+    <ul class="informacoes">
+        <li><h3>Contato</h3></li>
+        <li>Telefone: 14-987654-3210</li>
+        <li>Endereço: Taquarituba (SP), Luiz Benini, 217</li>
+        <li>Horário de atendimento: Das 9h até as 22h.</li>
+    </ul>
+    <ul></ul>
+</footer>
+<script>
+    // Type 1
+document.getElementById('execCopy').addEventListener('click', execCopy);
+function execCopy() {
+document.querySelector("#input").select();
+document.execCommand("copy");
+}
+</script>
+	
+	</body>
+	
+</html>
